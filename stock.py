@@ -84,9 +84,6 @@ class Stock():
             for _ in range(random.randrange(5, 11)):
                 self._trade(first_merchant, second_merchant)
         self.year += 1
-        self._end_of_year()
-
-    def _end_of_year(self):
         merchants_rating = sorted(
             self.merchants,
             key=lambda merchant: merchant.money,
