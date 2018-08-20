@@ -39,7 +39,7 @@ class Merchant():
         elif self.role == "Ушлый":
             if merchant_id not in self.journal:
                 decision = True
-            elif self.journal[merchant_id]["turns_played"] in [2, 3]:
+            elif self.journal[merchant_id]["turns_played"] in [0, 2, 3]:
                 decision = True
             elif self.journal[merchant_id]["turns_played"] == 1:
                 decision = False
